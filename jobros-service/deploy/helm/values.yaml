@@ -1,0 +1,29 @@
+---
+replicaCount: 3
+
+image:
+  repository: jobros-api
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+mongodb:
+  auth:
+    enabled: true
+    rootPassword: "CHANGE_ME"
+    username: "jobros"
+    password: "CHANGE_ME"
+    database: "jobros"
+  architecture: replicaset
+  replicaCount: 3
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi

@@ -1,0 +1,10 @@
+---
+apiVersion: v2
+name: jobros
+description: JobRos consumer service platform
+version: 0.1.0
+appVersion: "0.1.0"
+dependencies:
+  - name: mongodb
+    version: 13.x.x
+    repository: https://charts.bitnami.com/bitnami
