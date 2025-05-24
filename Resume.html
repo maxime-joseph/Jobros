@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume</title>
+    <style>
+        /* Basic Reset & Body Styling */
+        body {
+            font-family: 'Arial', sans-serif; /* You can change this to a font you prefer */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Light grey background */
+            color: #333; /* Dark grey text */
+        }
+
+        /* Container for the resume content */
+        .container {
+            width: 90%;
+            max-width: 800px; /* Limits width on larger screens */
+            margin: 30px auto; /* Centers the container with space top/bottom */
+            background: #ffffff; /* White background for the resume itself */
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+        }
+
+        /* Header Section: Name and Contact Info */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #007bff; /* Blue accent line */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            color: #0056b3; /* Darker blue for name */
+            font-weight: bold;
+        }
+
+        header .contact-info {
+            font-size: 1em;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        header .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        header .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* General Section Styling */
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            font-size: 1.6em;
+            color: #0056b3; /* Darker blue for section titles */
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Experience and Education Item Styling */
+        .job, .education-item {
+            margin-bottom: 20px;
+        }
+
+        .job h3, .education-item h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.2em;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .job .company, .education-item .institution {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 3px;
+        }
+        
+        .job .date, .education-item .date {
+            font-size: 0.9em;
+            font-style: italic;
+            color: #777;
+            margin-bottom: 8px;
+        }
+
+        .job ul, .education-item ul {
+            list-style-type: disc; /* Or 'circle', 'square' */
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        .job ul li, .education-item ul li {
+            margin-bottom: 5px;
+        }
+
+        /* Skills Section Styling */
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills ul li {
+            display: inline-block; /* Skills appear side-by-side */
+            background: #007bff; /* Blue background for skill tags */
+            color: #fff;
+            padding: 6px 12px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            border-radius: 4px; /* Rounded corners for tags */
+            font-size: 0.95em;
+        }
+
+        /* Footer (Optional) */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Maxime Joseph</h1>
+            <div class="contact-info">
+                108 Hemlock St, Timmins, ON | (705) 288-4634 | <a href="mailto:youremail@example.com">maxime.joseph@hotmail.ca</a><br>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">www.linkedin.com/in/maxime-joseph-8a8bb8164</a> | 
+                <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a> (Optional)
+            </div>
+        </header>
+
+        <div class="section summary">
+            <h2>Summary</h2>
+            <p>
+                Highly motivated and results-oriented professional with X years of experience in [Your Field]. Proven ability to [Mention a Key Skill/Accomplishment]. Seeking a challenging position at [Company Name, if targeting] where I can leverage my skills in [Key Skills] to contribute to company success.
+            </p>
+        </div>
+
+        <div class="section experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <div class="company">Current Company Name</div>
+                <h3>Your Job Title</h3>
+                <div class="date">May 2022 - Present | Timmins, ON</div>
+                <ul>
+                    <li>Describe your key responsibilities and accomplishments. Use action verbs.</li>
+                    <li>Quantify your achievements whenever possible (e.g., "Increased sales by 15%").</li>
+                    <li>Another point about your role.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <div class="company">Previous Company Name</div>
+                <h3>Previous Job Title</h3>
+                <div class="date">Jan 2020 - Apr 2022 | City, Province</div>
+                <ul>
+                    <li>Responsibility or accomplishment.</li>
+                    <li>Another achievement or task.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="institution">University/College Name</div>
+                <h3>Your Degree / Diploma / Certificate</h3>
+                <div class="date">Graduated: May 2020 | City, Province</div>
+                <ul>
+                    <li>Optional: Dean's List, Relevant Coursework, Capstone Project.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Project Management</li>
+                <li>Team Leadership</li>
+                <li>Microsoft Office Suite</li>
+                <li>Bilingual (English/French)</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
